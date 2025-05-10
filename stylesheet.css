@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Jersey15-Regular;
+    src: url('Font/Jersey15-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: Console;
+    src: url('Font/Console.ttf') format('truetype');
+}
+h1{
+    font-family: Jersey15-Regular;
+    font-size: 100px;
+    color: #ffffff;
+    text-shadow: #ffd6e8 0px 0px 10px, #cceeff 0px 0px 20px, #d8ffd6 0px 0px 30px, #e3d6ff 0px 0px 40px;
+    font-weight: 200;
+    margin: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+p{
+    font-family: Console;
+    font-size: 20px;
+    color: #000000;
+}
+button{
+    font-family: Jersey15-Regular;
+    font-size: 30px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin: 20px;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.why{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(background.jpg);
+    background-size: 60%;
+    background-blend-mode: lighten;
+    animation: back 10s infinite;
+    animation-timing-function: linear;
+    box-shadow: inset 0px 0px 100px 0px #6d6d6d;
+}
+@keyframes back {
+    100%{background-position:right;}
+    0%{background-position:left;}
+
+    0%{ background-color: #ffd6e8;}
+    12%{ background-color: #cceeff;}
+    25%{ background-color: #d8ffd6;}
+    33%{ background-color: #e3d6ff;}
+    50%{ background-color: #ffd6e8;}
+    65%{ background-color: #cceeff;}
+    81%{ background-color: #d8ffd6;}
+    94%{ background-color: #e3d6ff;}
+    100%{ background-color: #ffd6e8;}
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 100px 100px 100px; 
+    gap: 50px;
+}
+.first_dih, .second_dih, .third_dih{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.first_dih{
+    background-color: red;
+}
+.second_dih{
+}
+.third_dih{
+    background-color: green;
+}

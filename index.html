@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MN</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        // This keeps track of the current language
+        let currentLanguage = 'en';
+      
+        // Texts in both languages
+        const translations = {
+          en: {
+            title: "Happy internacional mother’s day!",
+            description: "Thank you for all the care and warmth you've given me every day. Happy Mother’s Day!",
+            button: "Česky"	
+
+
+          },
+          cz: {
+            title: 'Šťastný mezinárodní den matek!',
+            description: 'Děkuji ti za všechnu snahu co do nás dáváš. Hezký Den matek!',
+            button: 'English'
+
+
+          }
+        };
+      
+        function switchLanguage() {
+          // Toggle between 'en' and 'cz'
+          currentLanguage = currentLanguage === 'en' ? 'cz' : 'en';
+      
+          // Update the text
+          document.getElementById('title').textContent = translations[currentLanguage].title;
+          document.getElementById('description').textContent = translations[currentLanguage].description;
+          document.getElementById('button').textContent = translations[currentLanguage].button;
+        }
+      </script>
+</head>
+<body>
+    <div class="why">
+        <div class="language">
+            <button onclick="switchLanguage()" id="button">Česky</button>
+        </div>
+        <div class="main-container">
+            <div class="first_dih">
+                </h1>
+            </div>
+            <div class="second_dih">
+                <h1 id="title">Happy internacional mother's day!</h1>
+                <p id="description">Thank you for all the care and warmth you've given me every day. Happy Mother’s Day!</p>
+            </div>
+            <div class="third_dih">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
