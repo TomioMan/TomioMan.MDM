@@ -14,6 +14,7 @@
           en: {
             title: "Happy internacional mother’s day!",
             description: "Thank you for all the care and warmth you've given me every day. Happy Mother’s Day!",
+            description2: "Every morning when I put on clothes, every meal that I eat, every little thing I take out of the refrigiretor, everytime I pay for the bus, every one of those moments I think of you, because without you I couldnt be doing it, and i thank you for that greatly. Thank you.",
             button: "Česky"	
 
 
@@ -21,6 +22,7 @@
           cz: {
             title: 'Šťastný mezinárodní den matek!',
             description: 'Děkuji ti za všechnu snahu co do nás dáváš. Hezký Den matek!',
+            description2: 'Každé ráno když se oblékám, každé jídlo které jím, každou bulku kterou sním, pokaždé když platím za autobus, v každém z těchto okamžiků my přejde hlavou že se mám tak kvůli tobě, a za to ti převelice děkuji. Děkuji.',
             button: 'English'
 
 
@@ -28,13 +30,13 @@
         };
       
         function switchLanguage() {
-          // Toggle between 'en' and 'cz'
-          currentLanguage = currentLanguage === 'en' ? 'cz' : 'en';
+            currentLanguage = currentLanguage === 'en' ? 'cz' : 'en';
       
           // Update the text
-          document.getElementById('title').textContent = translations[currentLanguage].title;
-          document.getElementById('description').textContent = translations[currentLanguage].description;
-          document.getElementById('button').textContent = translations[currentLanguage].button;
+        document.getElementById('title').textContent = translations[currentLanguage].title;
+        document.getElementById('description').textContent = translations[currentLanguage].description;
+        document.getElementById('button').textContent = translations[currentLanguage].button;
+        document.getElementById('description2').textContent = translations[currentLanguage].description2;
         }
       </script>
 </head>
@@ -49,7 +51,8 @@
             </div>
             <div class="second_dih">
                 <h1 id="title">Happy internacional mother's day!</h1>
-                <p id="description">Thank you for all the care and warmth you've given me every day. Happy Mother’s Day!</p>
+                <p id="description">Thank you for all the care and warmth you've given me every day. Happy Mother’s Day! </p>
+                <p id="description2">Every morning when I put on clothes, every meal that I eat, every little thing I take out of the refrigiretor, everytime I pay for the bus, every one of those moments I think of you, because without you I couldnt be doing it, and i thank you for that greatly. Thank you.</p>
             </div>
             <div class="third_dih">
             </div>
