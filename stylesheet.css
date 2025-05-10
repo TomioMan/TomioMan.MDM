@@ -17,6 +17,7 @@ h1{
     text-shadow: #ffd6e8 0px 0px 10px, #cceeff 0px 0px 20px, #d8ffd6 0px 0px 30px, #e3d6ff 0px 0px 40px;
     font-weight: 200;
     margin: 50px;
+    margin-top: 70px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 5px;
@@ -26,8 +27,11 @@ h1{
 
 p{
     font-family: Console;
-    font-size: 20px;
+    font-size: 30px;
     color: #000000;
+    margin: 0 0 60px 0;
+    padding: 0 20vw 0 20vw;
+    text-align: justify;
 }
 button{
     font-family: Jersey15-Regular;
