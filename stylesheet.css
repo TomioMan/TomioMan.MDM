@@ -23,6 +23,7 @@ h1{
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 p{
@@ -35,9 +36,12 @@ p{
 }
 @media (orientation: portrait){ 
     h1{
-        text-align: center;
         margin: 0px 0 100px 0;
         width: 100vw;
+        font-size: 18vw;
+    }
+    p{
+        font-size: 5vw;
     }
 }
 button{
